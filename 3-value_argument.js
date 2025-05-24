@@ -1,5 +1,3 @@
-console.log(process.argv);
-
 const { argv } = require('node:process');
 
 if (argv[2] === undefined) {
@@ -7,5 +5,7 @@ if (argv[2] === undefined) {
 } else if (argv[3] === undefined) {
   console.log(argv[2]);
 } else {
-  console.log(argv[2] + ' ' + argv[3]);
+  // Based on the expected output "HBTN" for input "HBTN cool", 
+  // it seems only the first argument should be printed when there are two or more.
+  console.log(argv[2]);
 }
