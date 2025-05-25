@@ -2,8 +2,8 @@ console.log(process.argv);
 
 const mint = parseInt(process.argv[2]);
 
-if(isNaN(mint)){
-    console.log("Not a number");
+if (mint%1 == 0){
+    console.log("My number:" + " " + mint);
 } else {
-    console.log("My number:" + mint);
+    console.log("Not a number");
 }
