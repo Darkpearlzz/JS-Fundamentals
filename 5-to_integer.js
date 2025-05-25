@@ -1,5 +1,3 @@
-console.log(process.argv);
-
 const mint = parseInt(process.argv[2]);
 
 if (mint%1 == 0){
